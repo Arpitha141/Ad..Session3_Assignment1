@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object using Constructor </title>
+</head>
+<body>
+<script type="text/javascript">
+	function car(make,modle,year){
+		this.Make=make;
+		this.Modle=modle;
+		this.Year=year;
+	}
+
+	var mycar= new car("Maruti Suzuki", "800" , 1990);
+	var MyCar= new car("Ford", "Mustang" , "2016");
+
+	console.log(mycar.Make);
+	console.log(mycar);
+	console.log(MyCar);
+	document.write(" <h1> First Car Property </h1>")
+	document.write("<br>  Make: " +mycar.Make);
+	document.write("<br> Model: " +mycar.Model);
+	document.write("<br> Year : " +mycar.Year);
+	document.write("<h1> Second Car Property</h1> <br>Make: " +MyCar.Make +"<br>Model: " +MyCar.Model+ "<br>Year:" +MyCar.Year);
+	alert("Displaying the  car  Property");
+</script>
+</body>
+</html>
